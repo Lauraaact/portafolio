@@ -1,0 +1,221 @@
+/*Importaciones*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Montserrat", sans-serif;
+}
+/*root*/
+:root{
+    /*--Colores---*/
+    --darkColor: #325c6e;
+    --lightColor: #7ABBBE;
+    --backgroundColor: #F0FAF7;
+    --enfasisColor: #FFD3D6;
+    /*--Tipografias--*/
+    --tipografiaPrincipal: "Montserrat", sans-serif;
+}
+body{
+    background-color: var(--backgroundColor) ;
+}
+/*Condiciones iniciales*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: var(--tipografiaPrincipal);
+}
+/*---HEADER---*/
+header{
+    width: 100vw;
+}
+.menuNav{
+    background-color: var(--lightColor);
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+.listaLogo{
+    margin-left: 50px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+.listaMenu{
+    margin-right: 60px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+.listaMenu a{
+    text-decoration: none;
+    color: var(--darkColor);
+    font-size: 16px;
+    font-weight: bold;
+}
+.listaMenu a:hover{
+    color: var(--enfasisColor);
+}
+.logo{
+    width: 70px;
+    height: 70px;
+}
+.banner {
+    width: 100%;
+}
+/*----MAIN-----*/
+main{
+    width: 100vw;
+}
+/*-----Introducción-----*/
+.mainCont{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    grid-template-columns:  0.2fr 1fr 1fr 0.22fr;
+    gap: 5%;
+}
+.introImg {
+    align-items: center;
+    justify-content: center;
+}
+.introImg img{
+    width: 85%;
+}
+.introTxt {
+    margin-right: 60px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.introTxt p{
+    font-family: var(--tipografiaPrincipal);
+    font-size: 100%;
+    color: var(--darkColor);
+    font-weight:normal;
+}
+/*-----Servicios-----*/
+.servNav{
+    width: 100vw;
+    height: 100hw;
+}
+.servicios{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--darkColor);
+    font-family: var(--tipografiaPrincipal);
+}
+.listaNav{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 5%;
+    list-style: none;
+}
+.listaNav a{
+    text-decoration: none;
+    color: var(--darkColor);
+    font-size: 16px;
+    font-weight:normal;
+}
+.listaNav a:hover{
+    color: var(--enfasisColor);
+}
+.imgNav{
+    width: 200px;
+}
+.txtNav {
+    text-align: center;
+}
+/*-----Portafolio-----*/
+.sectionPort{
+    width: 100vw;
+    height: 100hw;
+}
+.portafolio{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--darkColor);
+    font-family: var(--tipografiaPrincipal);
+}
+.listPort{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.proyectoTitulo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: var(--tipografiaPrincipal);
+    font-size: 100%;
+    color: var(--darkColor);
+    font-weight:bold;   
+}
+.proyectoTxt{
+    font-family: var(--tipografiaPrincipal);
+    font-size: 100%;
+    color: var(--darkColor);
+    font-weight:normal;   
+    list-style:square;
+}
+/*-----FOOTER-----*/
+footer{
+    width: 100vw;
+    height: 150px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    background-color: var(--lightColor);
+}
+.listaFooter{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30%;
+    list-style: none;
+}
+.logoFooter{
+    height: 100px;
+}
+.logoSTEM{
+    height: 100px;
+}
+.listaContact{
+    margin-left: 40px;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+}
+.contacTxt{
+    margin-bottom: 10px;
+    font-family: var(--tipografiaPrincipal);
+    font-size: 100%;
+    color: var(--backgroundColor);
+    font-weight:bold;
+}
+.listaContact{
+    font-family: var(--tipografiaPrincipal);
+    font-size: 100%;
+    color: var(--backgroundColor);
+}
+i{
+    color: var(--backgroundColor);
+}
+.iconoFooter{
+    display: flex;
+}
