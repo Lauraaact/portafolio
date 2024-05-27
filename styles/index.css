@@ -1,31 +1,24 @@
-/*Importaciones*/
+/*--Importaciones--*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-body{
-    font-family: "Montserrat", sans-serif;
-}
-/*root*/
+/*--Variables--*/
 :root{
-    /*--Colores---*/
     --darkColor: #325c6e;
     --lightColor: #7ABBBE;
     --backgroundColor: #F0FAF7;
     --enfasisColor: #FFD3D6;
-    /*--Tipografias--*/
     --tipografiaPrincipal: "Montserrat", sans-serif;
-}
-body{
-    background-color: var(--backgroundColor) ;
 }
 /*Condiciones iniciales*/
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     width: 100%;
     overflow-x: hidden;
-    box-sizing: border-box;
     font-family: var(--tipografiaPrincipal);
+    background-color: var(--backgroundColor) ;
 }
 /*---HEADER---*/
 header{
@@ -33,94 +26,133 @@ header{
 }
 .menuNav{
     background-color: var(--lightColor);
-    width: 100%;
+    width: 100vw;
     height: 80px;
     display: flex;
+    position: fixed;
 }
-.listaLogo{
-    margin-left: 50px;
-    display: flex;
-    justify-content:left;
-    align-items: center;
+.logo{
+    height: 100%;
+    width: 50%;
+}
+.imgLogo{
+    align-items: flex-start;
+    height: 100%;
+}
+.menu{
+    height: 100%;
+    width: 50%;
+    align-content: center;
 }
 .listaMenu{
-    margin-right: 60px;
     width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: right;
-    align-items: center;
-    gap: 50px;
+    justify-content:right;
+    padding-right: 7%;
+    gap: 4%;
     list-style: none;
 }
 .listaMenu a{
     text-decoration: none;
     color: var(--darkColor);
-    font-size: 16px;
     font-weight: bold;
 }
 .listaMenu a:hover{
     color: var(--enfasisColor);
 }
-.logo{
-    width: 70px;
-    height: 70px;
-}
 .banner {
+    margin-top: 80px;
     width: 100%;
 }
 /*----MAIN-----*/
 main{
     width: 100vw;
 }
+h2{
+    text-align: center;
+    color: var(--enfasisColor);
+    font-family: var(--tipografiaPrincipal);
+    background-color: var(--darkColor);
+}
+span{
+    color: var(--darkColor);
+    font-weight: bold;
+}
 /*-----Introducción-----*/
 .mainCont{
     width: 100%;
-    height: 500px;
+    height: 400px;
     display: flex;
-    grid-template-columns:  0.2fr 1fr 1fr 0.22fr;
-    gap: 5%;
+    padding: 5%;
 }
-.introImg {
-    align-items: center;
-    justify-content: center;
-}
-.introImg img{
-    width: 85%;
-}
-.introTxt {
-    margin-right: 60px;
+.personal{
     display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+    width: 50%;
+    height: auto;
+    justify-content: center; 
 }
-.introTxt p{
-    font-family: var(--tipografiaPrincipal);
-    font-size: 100%;
-    color: var(--darkColor);
-    font-weight:normal;
+.imgPersonal{
+    width: 60%;
+    height: auto;
+}
+.introTxt{
+    width: 50%;
+    align-content: center;
+}
+/*-----Estudios-----*/
+.sectionEst{
+    padding: 5%;
+    width: 100vw;
+}
+.estudios{
+    margin-top: 5%;
+    padding-left: 23%;
+    padding-right: 23%;
+}
+/*-----Habilidades digitales-----*/
+.sectionHabl{
+    padding: 5%;
+    width: 100vw;
+}
+.listaHab{
+    margin-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 /*-----Servicios-----*/
 .servNav{
+    padding: 5%;
     width: 100vw;
-    height: 100hw;
 }
-.servicios{
-    margin-top: 50px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: var(--darkColor);
-    font-family: var(--tipografiaPrincipal);
-}
-.listaNav{
-    height: 40%;
+.listaNav1{
+    width: 100%;
+    margin-top: 5%;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items:center;
     gap: 5%;
     list-style: none;
+}
+.listaNav2{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 5%;
+    list-style: none;
+    padding-left: 11%;
+    padding-right: 11%;
+}
+.serBox{
+    height: 100%;
+    justify-content: center;
+    align-items:center;
+}
+.imgNav {
+    width: 100%;
+    height: 80%;
 }
 .listaNav a{
     text-decoration: none;
@@ -128,73 +160,106 @@ main{
     font-size: 16px;
     font-weight:normal;
 }
-.listaNav a:hover{
-    color: var(--enfasisColor);
-}
-.imgNav{
-    width: 200px;
-}
 .txtNav {
     text-align: center;
 }
 /*-----Portafolio-----*/
 .sectionPort{
+    padding: 5%;
     width: 100vw;
-    height: 100hw;
+    position: static;
 }
 .portafolio{
-    margin-top: 50px;
-    margin-bottom: 20px;
+    position: static;
+    margin-top: 5%;
+    overflow-x:scroll;
+    display: flex;
+    padding-left: 50%;
+    padding-right: 50%;
+    justify-content: last baseline;
+    align-items: center;
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+        scale: 25%; 
+    }
+    50% {
+        opacity: 1;
+        scale: 100%; 
+    }
+    100% {
+        opacity: 0;
+        scale: 25%; 
+    }
+}
+.imgSlider {
+    position: static;
     text-align: center;
     color: var(--darkColor);
-    font-family: var(--tipografiaPrincipal);
+    font-weight: bold;
+
+	view-timeline-name: --image;
+	view-timeline-axis: inline;
+
+	animation-timeline: --image;
+	animation-name: show;
+
+    animation-range: entry 50% cover 100%;
+	animation-fill-mode: both;
 }
-.listPort{
-    margin-left: 20%;
-    margin-right: 20%;
-}
-.proyectoTitulo{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: var(--tipografiaPrincipal);
-    font-size: 100%;
+.imgSlider a{
     color: var(--darkColor);
-    font-weight:bold;   
+    text-decoration: none;
 }
-.proyectoTxt{
-    font-family: var(--tipografiaPrincipal);
-    font-size: 100%;
-    color: var(--darkColor);
-    font-weight:normal;   
-    list-style:square;
+.imgSlider a:hover{
+    color: var(--enfasisColor);
 }
 /*-----FOOTER-----*/
 footer{
+    background-color: var(--lightColor);
     width: 100vw;
     height: 150px;
-    margin-top: 50px;
     display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-    align-items: center;
-    background-color: var(--lightColor);
+    padding: 1%;
 }
-.listaFooter{
-    width: 100%;
+.iconoFooter{
+    width: 50%;
+    height: 100%;
     display: flex;
-    justify-content:center;
     align-items: center;
-    gap: 30%;
-    list-style: none;
+    justify-content:right;
+}
+.imgSTEM{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.imgFooter{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 .logoFooter{
-    height: 100px;
+    width: 100%;
+    height: auto;
 }
 .logoSTEM{
-    height: 100px;
+    width: 40%;
+    height: auto;
+}
+.contactFooter{
+    width: 50%;
+    height: 100%;
+    align-content: center;
+    display: flex;
 }
 .listaContact{
-    margin-left: 40px;
+    margin-left: 5%;
     width: 100%;
     justify-content:center;
     align-items: center;
@@ -204,18 +269,18 @@ footer{
 .contacTxt{
     margin-bottom: 10px;
     font-family: var(--tipografiaPrincipal);
-    font-size: 100%;
     color: var(--backgroundColor);
     font-weight:bold;
 }
 .listaContact{
     font-family: var(--tipografiaPrincipal);
-    font-size: 100%;
     color: var(--backgroundColor);
+    width: fit-content;
 }
 i{
     color: var(--backgroundColor);
 }
-.iconoFooter{
-    display: flex;
+.contacto{
+    text-decoration: none;
+    color: var(--backgroundColor);
 }

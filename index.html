@@ -1,151 +1,165 @@
 <!-- Portafolio Laura Corredor -->
 
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="author" content="Laura Corredor">
+    <meta name="keyboard" content="portafolio,desarrollo web">
     <meta name="descriptions" content="Pagina de presentación">
+
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="shortcut icon" href="./assets/LogoFavicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Portafolio Laura</title>
 </head>
+
 <body>
+    <!--ENCABEZADO-->
     <header>
-        <!--Encabezado-->
+        <!--Menú de navegación-->
         <nav class="menuNav">
-            <!--Menú de navegación-->
-            <hr>
-            <ul class="listaLogo">
-                <img src="./assets/logoLaura.png" alt="logo" class="logo">
-            </ul>
-            <ul class="listaMenu">
-                <li>
-                    <a href="#">Servicios</a>
-                </li>
-                <li>
-                    <a href="#">Portafolio</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
+            <div class="logo">
+                <a href="#">
+                    <img src="./assets/logoLaura.png" alt="logo" class="imgLogo">
+                </a>
+            </div>
+            <div class="menu">
+                <ul class="listaMenu">
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
+        <!--Banner-->
         <img src="./assets/Banner.png" alt="banner" class="banner">
     </header>
+    <!--CONTENIDO-->
     <main>
         <!--Introducción-->
-        <section class="mainCont">
-            <hr>
-            <div class="introImg">
-                <img src="./assets/introduction.png" alt="personal" class="personal">
+        <section>
+            <div class="mainCont">
+                <div class="personal">
+                    <img src="./assets/introduction.png" alt="personal" class="imgPersonal">
+                </div>
+                <div class="introTxt">
+                    <p>Ingeniera biomédica apasionada por la tecnología y el desarrollo. Especializada en RPA y desarrollo web full stack. Comprometida con innovar en la intersección entre la biomedicina y la tecnología para mejorar la atención médica y la calidad de vida.</p>
+                </div>
             </div>
-            <div class="introTxt">
-                <p>
-                    Ingeniera biomédica apasionada por la tecnología y el desarrollo. Especializada en RPA y desarrollo web full stack. Comprometida con innovar en la intersección entre la biomedicina y la tecnología para mejorar la atención médica y la calidad de vida.
-                </p>
+        </section>
+        <!--Estudios-->
+        <section>
+            <div class="sectionEst">
+                <h2>ESTUDIOS Y CERTIFICACIONES</h2>
+                <div class="estudios">
+                    <ul class="listaEst">
+                        <li><span>Ingeniera Biomédica</span> - UMNG</li>
+                        <li><span>Formación en Sistema de Seguridad Social Integral en Colombia</span> - SENA</li>
+                        <li><span>Automation Developer Associate Training</span> - UiPath Academy</li>
+                    </ul>
+                </div>
             </div>
+        </section>
+        <!--Habilidades digitales-->
+        <section class="sectionHabl">
+            <h2>HABILIDADES DIGITALES</h2>
+            <ul class="listaHab">
+                <li><span>Desarrollo Frontend:</span> HTML5 / CSS3 / JavaScript / MEAN Stack.</li>
+                <li><span>Entornos de programación:</span> LabVIEW / Matlab / Simulink</li>
+                <li><span>Lenguaje de programación:</span> Visual Studio - Visual Basic.NET / C++ / Python</li>
+                <li><span>Software de automatización de procesos robóticos (RPA):</span> UiPath</li>
+                <li><span>Software de diseño 3D:</span> SOLİDWORK / AutoCad 2D -3D</li>
+                <li><span>Software de diseño de PCB (Placa de circuito impreso):</span> Proteus / NI-MultiSim</li>
+                <li><span>Microsoft Office:</span> Word / Excel / PowerPoint / Outlook / OneNote / Microsoft Teams</li>
+            </ul>
         </section>
         <!--Servicios-->
-        <nav class="servNav">
-            <h2 class="servicios">SERVICIOS</h2>
-            <ul class="listaNav">
-                <a href="#"><li>
-                    <div>
-                        <img src="./assets/2.png" alt="front" class="imgNav">
-                    </div>
-                    <div class="txtNav">
-                        Desarrollo Frontend
-                    </div>
-                </li></a>
-                <a href="#"><li>
-                    <div>
-                        <img src="./assets/3.png" alt="back" class="imgNav">
-                    </div>
-                    <div class="txtNav">
-                        Frameworks y Database
-                    </div>
-                </li></a>
-                <a href="#"><li>
-                    <div>
-                        <img src="./assets/5.png" alt="frame" class="imgNav">
-                    </div>
-                    <div class="txtNav">
-                        Desarrollo Backend
-                    </div>
-                </li></a>
+        <section class="servNav">
+            <h2>SERVICIOS</h2>
+            <ul class="listaNav1">
+                <li class="serBox">
+                    <img src="./assets/2.png" alt="front" class="imgNav">
+                    <div class="txtNav">Desarrollo Frontend</div>
+                </li>
+                <li class="serBox">
+                    <img src="./assets/3.png" alt="back" class="imgNav">
+                    <div class="txtNav">Frameworks y Database</div>
+                </li>
+                <li class="serBox">
+                    <img src="./assets/5.png" alt="frame" class="imgNav">
+                    <div class="txtNav">Desarrollo Backend</div>
+                </li>
             </ul>
-            <ul class="listaNav">
-                <a href="#"><li>
-                    <div>
-                        <img src="./assets/1.png" alt="app" class="imgNav">
-                    </div>
-                    <div class="txtNav">
-                        Desarrollo App Web
-                    </div>
-                </li></a>
-                <a href="#"><li>
-                    <div>
-                        <img src="./assets/4.png" alt="RPA" class="imgNav">
-                    </div>
-                    <div class="txtNav">
-                        Desarrollo RPA
-                    </div>
-                </li></a>
-            </ul>
-        </nav>
-        <section class="sectionPort">
-            <!--Portafolio-->
-            <h2 class="portafolio">PORTAFOLIO</h2>
-            <ul class="listPort">
-                <li class="proyectoTxt">
-                    <h3 class="proyectoTitulo">Proyecto 1.</h3>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nulla debitis sed ut aliquam, blanditiis officia! Aperiam totam corporis enim officia ad illum, at iure, illo qui aspernatur nihil facere.
+            <ul class="listaNav2">
+                <li class="serBox">
+                    <img src="./assets/1.png" alt="app" class="imgNav">
+                    <div class="txtNav">Desarrollo App Web</div>
                 </li>
-                <li class="proyectoTxt">
-                    <h3 class="proyectoTitulo">Proyecto 2.</h3>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe dolorum inventore, molestiae est veritatis, mollitia eaque qui temporibus itaque eum eveniet cupiditate nam laudantium autem minus harum blanditiis accusantium ullam?
-                </li>
-                <li class="proyectoTxt">
-                    <h3 class="proyectoTitulo">Proyecto 3.</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolore doloremque suscipit ullam magnam ea expedita aperiam deleniti eum! Similique quidem eius illum natus exercitationem. Suscipit id consectetur harum labore.
-                </li>
-                <li class="proyectoTxt">
-                    <h3 class="proyectoTitulo">Proyecto 4.</h3>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente harum optio deleniti accusantium. Eius quos assumenda eveniet in nobis iure ullam molestias reprehenderit perspiciatis beatae? Delectus eos corrupti incidunt eligendi.
-                </li>
-                <li class="proyectoTxt">
-                    <h3 class="proyectoTitulo">Proyecto 5.</h3>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque alias itaque et, sapiente porro atque animi deserunt facere quaerat illo ducimus. Delectus iste quisquam adipisci beatae quaerat, maxime necessitatibus laudantium!
+                <li class="serBox">
+                    <img src="./assets/4.png" alt="RPA" class="imgNav">
+                    <div class="txtNav ">Desarrollo RPA</div>
                 </li>
             </ul>
         </section>
+        <!--Portafolio-->
+        <div class="sectionPort">
+            <h2>PORTAFOLIO</h2>
+                <div class="slider">
+                    <div class="portafolio">
+                        <div class="imgSlider">
+                            <a href="#">PROYECTO 1 - Nombre xxx
+                            <img src="./assets/proyecto.png" alt="proyectoImg" class="imgPortafolio"></a>
+                        </div>
+                        <div class="imgSlider">
+                            <a href="#">PROYECTO 2 - Nombre xxx
+                            <img src="./assets/proyecto.png" alt="proyectoImg" class="imgPortafolio"></a>
+                        </div>
+                        <div class="imgSlider">
+                            <a href="#">PROYECTO 3 - Nombre xxx
+                            <img src="./assets/proyecto.png" alt="proyectoImg" class="imgPortafolio"></a>
+                        </div>
+                        <div class="imgSlider">
+                            <a href="#">PROYECTO 4 - Nombre xxx
+                            <img src="./assets/proyecto.png" alt="proyectoImg" class="imgPortafolio"></a>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
     </main>
     <footer>
-        <ul class="listaFooter">
-            <li class="contactFooter">
-                <ul class="listaContact">
-                    <h4 class="contacTxt">CONTACTO</h4>
-                    <li>
-                        <i class="bi bi-envelope-at-fill"></i>
+        <div class="contactFooter">
+            <ul class="listaContact">
+                <h4 class="contacTxt">CONTACTO</h4>
+                <li>
+                    <i class="bi bi-envelope-at-fill"></i>
                         lauracorredort99@gmail.com
-                    </li>
-                    <li>
-                        <i class="bi bi-telephone-fill"></i>
-                        3503755082
-                    </li>
-                    <li>
-                        <a href="www.linkedin.com/in/lauracorredort"><i class="bi bi-linkedin"></i></a>
-                        www.linkedin.com/in/lauracorredort
-                    </li>
-                </ul>
-            </li>
-            <li class="iconoFooter">
+                </li>
+                <li>
+                    <i class="bi bi-telephone-fill"></i>
+                    3503755082
+                </li>
+                <li>
+                    <a href="www.linkedin.com/in/lauracorredort" class="contacto"><i class="bi bi-linkedin"></i> www.linkedin.com/in/lauracorredort</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Lauraaact" class="contacto"><i class="bi bi-github"></i> https://github.com/Lauraaact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="iconoFooter">
+            <div class="imgSTEM">
                 <img src="./assets/stem.png" alt="wmnstem" class="logoSTEM">
+            </div>
+            <div class="imgFooter">
                 <img src="./assets/logoLauraCompletoBlanco.png" alt="logoBlanco" class="logoFooter">
-            </li>
-        </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
